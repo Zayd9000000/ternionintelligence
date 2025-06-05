@@ -842,10 +842,7 @@
         background-color: var(--color-primary);
       }
 
-      .btn.is--outline .btn__bg {
-        background-color: transparent;
-        border: 1px solid var(--color-dark);
-      }
+     
 
       .btn.is--outline .btn__arrow-box {
         background-color: transparent;
@@ -1102,7 +1099,7 @@
 
       [data-bg-section="yellow"][data-theme-section="light"] .edge-btn .btn__bg,
       [data-bg-section="yellow"][data-theme-section="light"] .edge-btn .btn__wipe {
-        background-color: var(--color-primary);
+        background-color: black;
       }
 
       .edge-btn p {
@@ -1112,6 +1109,9 @@
       [data-bg-section="yellow"][data-theme-section="light"] .edge-btn[data-flickity-control-status="not-active"] p {
         color: var(--color-secondary);
       }
+
+     
+
 
       /* ------------------------  Rich Text -------------------------------------------------- */
 
@@ -1587,11 +1587,25 @@
           background-color: var(--color-light);
         }
 
-        .problem_text{
-          padding-left: 50vw;
-          padding-right: 3.5vw;
-          margin-top: 50px;
-        }
+        .problem_text {
+  padding-left: 15vw;
+  padding-right: 5vw;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .problem_text {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .problem_text {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+}
 
         [data-theme-nav="dark"] .main-nav-bar .dropdown .link {
           color: var(--color-dark);
@@ -2065,10 +2079,27 @@
 
             .footer__logo {
               margin-right: 500px;
-              margin-left: 50px;
+              margin-left: 0px;
             }
 
+            .slider__col-btns{
+              margin-bottom: -30px;
+            }
 
+            
+             .edge__col-btns, .edge-btn .btn__wipe,
+            .edge__col-btns, .edge-btn, .btn__bg,
+            .edge__col-btns, .edge-btn  {
+              background: #000 !important;
+              background-color: #000 !important;
+            }
+            .edge__col-btns .edge-btn p {
+              color: #fff !important;
+            }
+            .edge__col-btns .edge-btn .btn__border {
+              border: 1px solid #fff !important;
+              opacity: 1 !important;
+            }
             
             .offerings .offerings__visual {
               transition: all var(--animation-primary);
@@ -2126,7 +2157,7 @@
               <div class="offerings__sticky">
                 <div class="offerings__sticky-inner">
                   <div data-item-index="0" data-item-index-status="active" class="offerings__sticky-single"><a
-                      href="hartmann-ventures.html" class="offerings__visual w-inline-block">
+                       class="offerings__visual w-inline-block">
                       <div class="offerings__visual-before"></div>
                       <div class="glow-container">
                         
@@ -2198,11 +2229,11 @@
                       </div>
                     </a></div>
                   <div data-item-index="1" data-item-index-status="not-active" class="offerings__sticky-single"><a
-                      href="digital-assets-fund.html" class="offerings__visual is--digital w-inline-block">
+                       class="offerings__visual is--digital w-inline-block">
                       <div class="offerings__visual-before"></div>
                       <div class="glow-container is--blue">
                        
-                      </div><img src="frame.svg">
+                      </div><img src="framework.png">
                         <path
                           d="M264.773 760L272.3 751.361H478.556L488.593 760H759.999V495.225L751.361 487.699V281.443L759.999 271.407V0.000314424L495.226 0.000305176L487.698 8.63951L281.443 8.63952L271.406 0.000314424L0 0.000326835V264.775L8.63823 272.302L8.63821 478.558L0 488.593V760L264.773 760Z"
                           fill="var(--color-dark)"></path>
@@ -2327,7 +2358,7 @@
               <div data-item-index-status="active" data-item-index="0" data-item-index-target=""
                 class="offerings__single">
                 <div class="offerings__single-inner">
-                  <div data-animation-scroll="fade" class="offerings__single-visual"><a href="hartmann-ventures.html"
+                  <div data-animation-scroll="fade" class="offerings__single-visual"><a 
                       class="offerings__visual w-inline-block">
                       <div class="offerings__visual-before"></div>
                       <div class="glow-container">
@@ -2416,7 +2447,7 @@
               <div data-item-index-status="not-active" data-item-index="1" data-item-index-target=""
                 class="offerings__single">
                 <div class="offerings__single-inner">
-                  <div data-animation-scroll="fade" class="offerings__single-visual"><a href="digital-assets-fund.html"
+                  <div data-animation-scroll="fade" class="offerings__single-visual"><a 
                       class="offerings__visual is--digital w-inline-block">
                       <div class="offerings__visual-before"></div>
                       <div class="glow-container is--blue">
@@ -2424,7 +2455,7 @@
                         <div class="glow is--right"></div>
                         <div class="glow is--bottom"></div>
                         <div class="glow is--left"></div>
-                      </div><img src="frame.svg">
+                      </div><img src="framework.png">
                         <path
                           d="M264.773 760L272.3 751.361H478.556L488.593 760H759.999V495.225L751.361 487.699V281.443L759.999 271.407V0.000314424L495.226 0.000305176L487.698 8.63951L281.443 8.63952L271.406 0.000314424L0 0.000326835V264.775L8.63823 272.302L8.63821 478.558L0 488.593V760L264.773 760Z"
                           fill="var(--color-dark)"></path>
@@ -2670,7 +2701,7 @@
                                     <path d="M370 441L1 1" stroke="currentColor" vector-effect="non-scaling-stroke"></path>
                                     <path d="M8.35356 334.354L8.50001 334.207L8.50001 334L8.5 108L8.5 107.793L8.35354 107.646L0.499999 99.7929L0.500008 0.499998L370.5 0.50003L370.5 99.7929L362.646 107.646L362.5 107.793L362.5 108L362.5 334L362.5 334.207L362.646 334.354L370.5 342.207L370.5 441.5L0.49997 441.5L0.499978 342.207L8.35356 334.354Z" stroke="currentColor" vector-effect="non-scaling-stroke"></path>
                                 </svg>
-                                <div class="edge-card__visual-wrap"><img src="https://cdn.prod.website-files.com/66c31377d57fee80e2d1cf4d/66d6d995a853dddb1eeeac27_fundamentals-visual.webp" loading="lazy" width="483" alt="" class="edge-card__visual-img" />
+                                <div class="edge-card__visual-wrap"><img src="forecast.png" loading="lazy" width="483" alt="" class="edge-card__visual-img" />
                                     <div class="edge-card__border"></div>
                                 </div>
                                 <div class="corners">
@@ -2755,7 +2786,7 @@
                                 <path d="M370 441L1 1" stroke="currentColor" vector-effect="non-scaling-stroke"></path>
                                 <path d="M8.35356 334.354L8.50001 334.207L8.50001 334L8.5 108L8.5 107.793L8.35354 107.646L0.499999 99.7929L0.500008 0.499998L370.5 0.50003L370.5 99.7929L362.646 107.646L362.5 107.793L362.5 108L362.5 334L362.5 334.207L362.646 334.354L370.5 342.207L370.5 441.5L0.49997 441.5L0.499978 342.207L8.35356 334.354Z" stroke="currentColor" vector-effect="non-scaling-stroke"></path>
                             </svg>
-                            <div class="edge-card__visual-wrap"><img src="https://cdn.prod.website-files.com/66c31377d57fee80e2d1cf4d/66d6d995a853dddb1eeeac27_fundamentals-visual.webp" loading="lazy" width="483" alt="" class="edge-card__visual-img" />
+                            <div class="edge-card__visual-wrap"><img src="report.png" loading="lazy" width="483" alt="" class="edge-card__visual-img" />
                                 <div class="edge-card__border"></div>
                             </div>
                             <div class="corners">
@@ -2773,200 +2804,204 @@
     </div>
 </section>
       
-<div class="boxed-light">
-          
-          <section data-bg-section="blue" data-theme-section="lightsecondary" class="slider-full">
-            <div class="container is--medium">
-              <div class="slider__row-title">
-                <div class="slider__col-title">
-                  <div class="slider__col-row-title">
-                    <h2 data-animation-scroll="" data-split-words="" class="h3">Our Team</h2>
-                  </div>
-                </div>
-                <div data-animation-scroll="fade" class="slider__col-btns is--hide-mobile">
-                  <div data-flickity-control="prev" data-hover="" data-arrow="internal" class="btn-arrow is--flipped">
-                    <div class="btn__wipe"></div>
-                    <div class="btn__border is--transparent"></div>
-                    <div class="btn-arrow__arrow-box">
-                      <div class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 19 22"
-                          fill="none" class="arrow-svg">
-                          <path d="M0 6H2.28171L9.50084 15.0239L16.72 6H19L9.50084 18.2255L0 6Z" fill="currentColor">
-                          </path>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 19 22" fill="none"
-                          class="arrow-svg duplicate">
-                          <path d="M0 6H2.28171L9.50084 15.0239L16.72 6H19L9.50084 18.2255L0 6Z" fill="currentColor">
-                          </path>
-                        </svg></div>
-                    </div>
-                  </div>
-                  <div data-flickity-control="next" data-hover="" data-arrow="internal" class="btn-arrow">
-                    <div class="btn__wipe"></div>
-                    <div class="btn__border is--transparent"></div>
-                    <div class="btn-arrow__arrow-box">
-                      <div class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 19 22"
-                          fill="none" class="arrow-svg">
-                          <path d="M0 6H2.28171L9.50084 15.0239L16.72 6H19L9.50084 18.2255L0 6Z" fill="currentColor">
-                          </path>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 19 22" fill="none"
-                          class="arrow-svg duplicate">
-                          <path d="M0 6H2.28171L9.50084 15.0239L16.72 6H19L9.50084 18.2255L0 6Z" fill="currentColor">
-                          </path>
-                        </svg></div>
-                    </div>
-                  </div>
-                </div>
+<section data-theme-section="dark" data-bg-section="blue" class="team is--home">
+  <div class="container is--medium">
+      <div class="slider__row-title">
+          <div class="slider__col-title">
+              <div class="slider__col-row-title">
+                  <h2 data-animation-scroll="" data-split-words="" class="h3">Team</h2>
               </div>
-            </div>
-            <div data-animation-scroll="fade" class="container">
-              <div data-flickity-cards-init="center" class="card-slider__group w-dyn-list">
-                <div role="list" class="card-slider w-dyn-items">
-                  
-                  
-                  
-                  <div role="listitem" class="card-slider__slide w-dyn-item">
-                    <div class="quote">
-                      <div class="quote__border"></div>
-                      <div class="quote__image">
-                        <div class="quote__image-box">
-                          <img src="cambridge.png">
-                          
-                        </div>
-                      </div>
-                      <div class="quote__content">
-                        <div class="quote__info">
-                          <div class="quote__author">
-                            <h3 class="h7">Dr. Damian Valdez</h3>
-                            <div class="quote__job-title">
-                              <p>Professor of International Order and Modern European History</p>
-                          </div>
-                          </div>
-                          <div class="quote__logo">
-                            <div data-logo-size="Large" class="card-logo"><img
-                                src=""
-                                loading="lazy" alt="" class="card-logo__img is--filter-blue is--full" /></div>
-                          </div>
-                        </div>
-                        <div class="quote__quote">
-                          <p class="is--ml">Damian is a Professor of History and Theorist of International Order from Trinity College, Cambridge. He has published pieces on world order in Engelsberg Ideas and has been contracted to publish War of Ideas: A History of Revolutionary Europe, 1900-1945 with Penguin, Allen Lane. Distinguished Fellow in International Order at the UK Council on Geostrategy, and Board Advisor to the Cambridge MENAF.</p>
-                        </div>
-                        
-                      </div>
-                    </div>
+          </div>
+          <div data-animation-scroll="fade" class="slider__col-btns is--floating">
+              <div data-flickity-control="prev" data-hover="" data-arrow="internal" class="btn-arrow is--flipped">
+                  <div class="btn__wipe"></div>
+                  <div class="btn__border is--transparent"></div>
+                  <div class="btn-arrow__arrow-box">
+                      <div class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 19 22" fill="none" class="arrow-svg">
+                              <path d="M0 6H2.28171L9.50084 15.0239L16.72 6H19L9.50084 18.2255L0 6Z" fill="currentColor"></path>
+                          </svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 19 22" fill="none" class="arrow-svg duplicate">
+                              <path d="M0 6H2.28171L9.50084 15.0239L16.72 6H19L9.50084 18.2255L0 6Z" fill="currentColor"></path>
+                          </svg></div>
                   </div>
-
-                  
-                  <div role="listitem" class="card-slider__slide w-dyn-item">
-                    <div class="quote">
-                      <div class="quote__border"></div>
-                      <div class="quote__image">
-                        <div class="quote__image-box">
-                          <img src="Kings.png" style="width: 170px; height: 200px;" >
-                          
-                        </div>
-                      </div>
-                      <div class="quote__content">
-                        <div class="quote__info">
-                          <div class="quote__author">
-                            <h3 class="h7">Thompson Foix</h3>
-                            <div class="quote__job-title">
-                              <p>Political Intelligence Strategist and Senior Analyst</p>
-                          </div>
-                          </div>
-                          <div class="quote__logo">
-                            <div data-logo-size="Large" class="card-logo"><img
-                                src=""
-                                loading="lazy" alt="" class="card-logo__img is--filter-blue is--full" /></div>
-                          </div>
-                        </div>
-                        <div class="quote__quote">
-                          <p class="is--ml">Thompson is a senior analyst in strategic and political intelligence, with operational experience and theoretical expertise. He has experience in the strategic communications and consulting industries, including at his own practice. He is also a scholar of political theory, with an MA in Political Thought from King’s College, Cambridge.</p>
-                        </div>
-                        
-                      </div>
-                    </div>
-                  </div>
-
-                  <div role="listitem" class="card-slider__slide w-dyn-item">
-                    <div class="quote">
-                      <div class="quote__border"></div>
-                      <div class="quote__image">
-                        <div class="quote__image-box">
-                          <img src="Trinity.png" style="width: 200px; height: 210px; margin-top: 30px;">
-                          
-                        </div>
-                      </div>
-                      <div class="quote__content">
-                          <div class="quote__author">
-                            <h3 class="h7">Malachi Ajayi</h3>
-                            <div class="quote__job-title">
-                              <p>AI Entrepreneur and Geopolitical Analyst</p>
-                          </div>
-                          </div>
-                          <div class="quote__logo">
-                            <div data-logo-size="Large" class="card-logo"><img
-                                src=""
-                                loading="lazy" alt="" class="card-logo__img is--filter-blue is--full" /></div>
-                          </div>
-                        
-                        <div class="quote__quote">
-                          <p class="is--ml">Malachi is a multi-exit software founder and entrepreneur, specialising in AI and strategic consulting. He worked as a machine learning engineer at EDF, using language models to understand news and qualitative information to understand crude oil and natural gas prices. He is also a scholar specialising in geopolitics, with an MA in Politics and International Relations from Trinity College, Cambridge.</p>
-                        </div>
-                        
-                      </div>
-                    </div>
-                  </div>
-
-
-
-
-
-                  
-                  
-                </div>
               </div>
-            </div>
-            <div class="container is--medium is--hidden-desktop">
-              <div class="slider__bottom-controls">
-                <div data-animation-scroll="fade" class="slider__col-btns">
-                  <div data-flickity-control="prev" data-hover="" data-arrow="internal" class="btn-arrow is--flipped">
-                    <div class="btn__wipe"></div>
-                    <div class="btn__border is--transparent"></div>
-                    <div class="btn-arrow__arrow-box">
-                      <div class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 19 22"
-                          fill="none" class="arrow-svg">
-                          <path d="M0 6H2.28171L9.50084 15.0239L16.72 6H19L9.50084 18.2255L0 6Z" fill="currentColor">
-                          </path>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 19 22" fill="none"
-                          class="arrow-svg duplicate">
-                          <path d="M0 6H2.28171L9.50084 15.0239L16.72 6H19L9.50084 18.2255L0 6Z" fill="currentColor">
-                          </path>
-                        </svg></div>
-                    </div>
+              <div data-flickity-control="next" data-hover="" data-arrow="internal" class="btn-arrow">
+                  <div class="btn__wipe"></div>
+                  <div class="btn__border is--transparent"></div>
+                  <div class="btn-arrow__arrow-box">
+                      <div class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 19 22" fill="none" class="arrow-svg">
+                              <path d="M0 6H2.28171L9.50084 15.0239L16.72 6H19L9.50084 18.2255L0 6Z" fill="currentColor"></path>
+                          </svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 19 22" fill="none" class="arrow-svg duplicate">
+                              <path d="M0 6H2.28171L9.50084 15.0239L16.72 6H19L9.50084 18.2255L0 6Z" fill="currentColor"></path>
+                          </svg></div>
                   </div>
-                  <div data-flickity-control="next" data-hover="" data-arrow="internal" class="btn-arrow">
-                    <div class="btn__wipe"></div>
-                    <div class="btn__border is--transparent"></div>
-                    <div class="btn-arrow__arrow-box">
-                      <div class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 19 22"
-                          fill="none" class="arrow-svg">
-                          <path d="M0 6H2.28171L9.50084 15.0239L16.72 6H19L9.50084 18.2255L0 6Z" fill="currentColor">
-                          </path>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 19 22" fill="none"
-                          class="arrow-svg duplicate">
-                          <path d="M0 6H2.28171L9.50084 15.0239L16.72 6H19L9.50084 18.2255L0 6Z" fill="currentColor">
-                          </path>
-                        </svg></div>
-                    </div>
-                  </div>
-                </div>
               </div>
-            </div>
-            <div class="container">
-              
-            </div>
-          </section>
-        </div>
+          </div>
       </div>
+  </div>
+  <div data-animation-scroll="fade" class="container">
+      <div data-flickity-cards-init="" class="card-slider__group w-dyn-list">
+          <div role="list" class="card-slider w-dyn-items">
+              <div role="listitem" class="card-slider__slide is--three w-dyn-item">
+                  <div class="team-card">
+                      <div class="team-card__before"></div>
+                      <div class="team-card__bg"></div>
+                      <div class="team-card__diagonal"></div>
+                      <div class="team-card__border"></div>
+                      <div class="team-card__inner">
+                          <div class="team-card__image">
+                              <div class="team-card__before"></div><img loading="lazy" src="default.png" alt="" sizes="100vw" srcset="default.png 500w, default.png 1024w" class="team-card__image-img" /><img loading="lazy" src="default.png" alt="" class="team-card__image-img is--hover w-condition-invisible w-dyn-bind-empty" />
+                              <div class="pixel-grid"></div>
+                              <div class="team-card__bio">
+                                  <div class="team-card__bg"></div>
+                                  <p class="is--xs is--team-card">Damian is a Professor of History and Theorist of International Order from Trinity College, Cambridge. He has published pieces on world order in Engelsberg Ideas and has been contracted to publish War of Ideas: A History of Revolutionary Europe, 1900-1945 with Penguin, Allen Lane. Distinguished Fellow in International Order at the UK Council on Geostrategy, and Board Advisor to the Cambridge MENAF.</p>
+                              </div>
+                              <div class="team-card__border"></div>
+                          </div>
+                          <div class="team-card__content">
+                              <div class="team-card__details">
+                                  <h3 class="h6">Dr. Damian Valdez</h3>
+                                  <p class="is--transparent">Professor of History, Cambridge University</p>
+                              </div>
+                              
+                          </div>
+                          <div class="bio-toggle">
+                              <div data-toggle-bio="" data-hover="" class="btn-social is--team is--bio">
+                                  <div class="btn__bg is--social"></div>
+                                  <div class="btn__wipe"></div>
+                                  <div class="btn__border is--team"></div>
+                                  <div class="btn-social__icon is--bio"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="btn-social__icon-svg">
+                                          <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor"></path>
+                                          <path d="M12 15.5V10.5" stroke="currentColor"></path>
+                                          <path d="M12 8V9" stroke="currentColor"></path>
+                                      </svg></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="corners is--primary">
+                          <div class="corners__corner">
+                              <div class="corners__corner-inner"></div>
+                          </div>
+                          <div class="corners__corner is--right-top">
+                              <div class="corners__corner-inner"></div>
+                          </div>
+                          <div class="corners__corner is--right-bottom">
+                              <div class="corners__corner-inner"></div>
+                          </div>
+                          <div class="corners__corner is--left-bottom">
+                              <div class="corners__corner-inner"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div role="listitem" class="card-slider__slide is--three w-dyn-item">
+                  <div class="team-card">
+                      <div class="team-card__before"></div>
+                      <div class="team-card__bg"></div>
+                      <div class="team-card__diagonal"></div>
+                      <div class="team-card__border"></div>
+                      <div class="team-card__inner">
+                          <div class="team-card__image">
+                              <div class="team-card__before"></div><img loading="lazy" src="default.png" alt="" class="team-card__image-img" /><img loading="lazy" src="default.png" alt="" class="team-card__image-img is--hover w-condition-invisible w-dyn-bind-empty" />
+                              <div class="pixel-grid"></div>
+                              <div class="team-card__bio">
+                                  <div class="team-card__bg"></div>
+                                  <p class="is--xs is--team-card">Thompson is a senior analyst in strategic and political intelligence, with operational experience and theoretical expertise. He has experience in the strategic communications and consulting industries, including at his own practice. He is also a scholar of political theory, with an MA in Political Thought from King's College, Cambridge.</p>
+                              </div>
+                              <div class="team-card__border"></div>
+                          </div>
+                          <div class="team-card__content">
+                              <div class="team-card__details">
+                                  <h3 class="h6">Thompson Foix</h3>
+                                  <p class="is--transparent">Senior Analyst, Politics and Intelligence</p>
+                              </div>
+                              
+                          </div>
+                          <div class="bio-toggle">
+                              <div data-toggle-bio="" data-hover="" class="btn-social is--team is--bio">
+                                  <div class="btn__bg is--social"></div>
+                                  <div class="btn__wipe"></div>
+                                  <div class="btn__border is--team"></div>
+                                  <div class="btn-social__icon is--bio"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="btn-social__icon-svg">
+                                          <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor"></path>
+                                          <path d="M12 15.5V10.5" stroke="currentColor"></path>
+                                          <path d="M12 8V9" stroke="currentColor"></path>
+                                      </svg></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="corners is--primary">
+                          <div class="corners__corner">
+                              <div class="corners__corner-inner"></div>
+                          </div>
+                          <div class="corners__corner is--right-top">
+                              <div class="corners__corner-inner"></div>
+                          </div>
+                          <div class="corners__corner is--right-bottom">
+                              <div class="corners__corner-inner"></div>
+                          </div>
+                          <div class="corners__corner is--left-bottom">
+                              <div class="corners__corner-inner"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div role="listitem" class="card-slider__slide is--three w-dyn-item">
+                  <div class="team-card">
+                      <div class="team-card__before"></div>
+                      <div class="team-card__bg"></div>
+                      <div class="team-card__diagonal"></div>
+                      <div class="team-card__border"></div>
+                      <div class="team-card__inner">
+                          <div class="team-card__image">
+                              <div class="team-card__before"></div><img loading="lazy" src="default.png" alt="" sizes="100vw" srcset="default.png 500w, default.png 1024w" class="team-card__image-img" /><img loading="lazy" src="default.png" alt="" class="team-card__image-img is--hover w-condition-invisible w-dyn-bind-empty" />
+                              <div class="pixel-grid"></div>
+                              <div class="team-card__bio">
+                                  <div class="team-card__bg"></div>
+                                  <p class="is--xs is--team-card">Malachi is a multi-exit software founder and entrepreneur, specialising in AI and strategic consulting. He worked as a machine learning engineer at EDF, using language models to understand news and qualitative information to understand crude oil and natural gas prices. He is also a scholar specialising in geopolitics, with an MA in Politics and International Relations from Trinity College, Cambridge.</p>
+                              </div>
+                              <div class="team-card__border"></div>
+                          </div>
+                          <div class="team-card__content">
+                              <div class="team-card__details">
+                                  <h3 class="h6">Malachi Ajayi</h3>
+                                  <p class="is--transparent">Founder, Consulting</p>
+                              </div>
+                              
+                          </div>
+                          <div class="bio-toggle">
+                              <div data-toggle-bio="" data-hover="" class="btn-social is--team is--bio">
+                                  <div class="btn__bg is--social"></div>
+                                  <div class="btn__wipe"></div>
+                                  <div class="btn__border is--team"></div>
+                                  <div class="btn-social__icon is--bio"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="btn-social__icon-svg">
+                                          <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor"></path>
+                                          <path d="M12 15.5V10.5" stroke="currentColor"></path>
+                                          <path d="M12 8V9" stroke="currentColor"></path>
+                                      </svg></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="corners is--primary">
+                          <div class="corners__corner">
+                              <div class="corners__corner-inner"></div>
+                          </div>
+                          <div class="corners__corner is--right-top">
+                              <div class="corners__corner-inner"></div>
+                          </div>
+                          <div class="corners__corner is--right-bottom">
+                              <div class="corners__corner-inner"></div>
+                          </div>
+                          <div class="corners__corner is--left-bottom">
+                              <div class="corners__corner-inner"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+</section>
       
       
       
@@ -3020,9 +3055,9 @@
                   <div class="article-card__image">
                     <div class="article-card__image-before"></div><img alt="The Teleotypic Articulation of World Order                    "
                       loading="lazy"
-                      src="https://cdn.prod.website-files.com/66c71da082e3d64d93782c96/680a2e3b0307cfadb0273229_Untitled%20design%20-%202025-04-24T082723.304.avif"
-                      sizes="100vw"
-                      srcset="https://cdn.prod.website-files.com/66c71da082e3d64d93782c96/680a2e3b0307cfadb0273229_Untitled%20design%20-%202025-04-24T082723.304-p-500.avif 500w, https://cdn.prod.website-files.com/66c71da082e3d64d93782c96/680a2e3b0307cfadb0273229_Untitled%20design%20-%202025-04-24T082723.304-p-800.avif 800w, https://cdn.prod.website-files.com/66c71da082e3d64d93782c96/680a2e3b0307cfadb0273229_Untitled%20design%20-%202025-04-24T082723.304.avif 1920w"
+                      src="triangle.png" 
+                      sizes="75vw"
+                      srcset="triangle.png 1000w 500h"
                       class="article-card__image-img" />
                   </div>
                   <div class="article-card__content" id="insight">
@@ -3238,8 +3273,8 @@
                 <h2 class="h3 prefooter__h">Learn more about our offerings</h2>
               </div>
               <div class="prefooter__btn"><a data-barba-update="" data-size="xl" data-type="alt" data-hover=""
-                  data-arrow="external" class="link w-inline-block">
-                  <p class="link__p">contact@ternionintelligence.com</p>
+                  data-arrow="external" class="link w-inline-block" href="mailto:contact@ternionintelligence.com">
+                  <p class="link__p">Contact Us</p>
                   <div class="link__line"></div>
                   <div class="link__line duplicate"></div>
                   <div class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 19 22"
@@ -3281,7 +3316,7 @@
                       <div class="tag__bg is--footer"></div>
                       <p class="is--s">General Inquiries<br /></p>
                     </div><a data-barba-update="" data-size="medium" data-type="alt" data-hover="" data-arrow="none"
-                      href="mailto:press@hartmannc  apital.com" class="link w-inline-block">
+                    href="mailto:contact@ternionintelligence.com" class="link w-inline-block" >
                       <p class="link__p">contact@ternionintelligence.com</p>
                       <div class="link__line"></div>
                       <div class="link__line duplicate"></div>
